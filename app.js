@@ -8,7 +8,7 @@ const server = http.createServer((req,res)=>{
     if(reqPath === '/'){
         reqPath = '/index.html';
     }
-    let pathFile = './barber_shop' + reqPath;
+    let pathFile = '../barber_shop' + reqPath;
     console.log('requested file >>>', pathFile);
     fs.readFile(pathFile,(err,content)=>{
         if(err){
